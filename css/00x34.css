@@ -1,0 +1,337 @@
+
+body{
+	background-color: #121212;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: white;
+}
+
+#main-content-holder{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+}
+
+#nav-bar-holder{
+	position: absolute;
+	height: 12vh;
+	width: 100vw;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-family: 'Oxanium', cursive;
+	background-color: rgba(0, 0, 0, 0.3);
+	/*border-bottom: 1px solid rgba(255, 255, 255, 1.0);*/
+}
+
+#nav-bar{
+	height: auto;
+	display: table;
+	width: auto;
+	left: 0px;
+	right: 0px;
+}
+
+.nav{
+	position: relative;
+	display: table-cell;
+	height: 15vh;
+	width: auto;
+	font-size:4vh;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	line-height: 15vh;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+#toggle-nav{
+	display: none;
+	height: 10vh;
+}
+
+#toggle-icon{
+	height: 10vh;
+	width: 10vh;
+	float: right;
+	background-image: url("../img/ham_nav.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 1060px) {
+	#nav-bar-holder{
+		height: auto;
+		display: table;
+		position: relative;
+		border-bottom: 0px solid white;
+	}
+	#nav-bar{
+		display: block !important;
+	}
+	.nav{
+		height: 18vh;
+		padding: 0px;
+		display: none;
+		width: 100%;
+	}
+	#toggle-nav{
+		display: table;
+	}
+}
+
+#vcx-holder{
+	position: absolute;
+	height: 88vh;
+	width: 100vw;
+	top: 12vh;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: table;
+	overflow: visible;
+}
+
+.content-holder{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	display: table-cell;
+}
+
+#left-content-holder{
+	left: 0px;
+}
+
+#right-content-holder{
+	right: 0px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+@media only screen and (max-width: 1060px) {
+	#vcx-holder{
+		height: 100vh;
+		position: relative;
+		top: 0px;
+	}
+	.content-holder{
+		display: block;
+		width: 100vw;
+		height: 50vh;
+	}
+	#left-content-holder{
+		top: 0px;
+	}
+	#right-content-holder{
+		bottom: 0px;
+	}
+}
+
+
+
+
+.content{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.lcon{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.k40{ z-index: 40; }
+.k41{ z-index: 41; }
+.k42{ z-index: 42; }
+.k43{ z-index: 43; }
+
+#profile{
+	height: 100%;
+	width: 80%;
+	/*background-image: url("../img/cropped_no_frame_nopattern_cen89.png");*/
+}
+
+#capx43{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#fbcx41{
+	height: 100vh;
+	width: 100vw;
+}
+
+@media only screen and (max-width: 1060px) {
+	#fbcx41{
+		display: none;
+	}
+}
+
+#about-section-holder{
+	position: absolute;
+	height:auto;
+	width: 100%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.about-line{
+	position: relative;
+	display: table;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.about-line span{
+	display: table-cell;
+	text-align: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#name-holder{
+	display: table;
+	width: auto;
+	margin: 0 auto;
+	opacity: 1;
+}
+
+#name-holder span{
+	opacity: 1;
+	-webkit-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+
+.cx12{
+	font-size: 6vh;
+	line-height: 6vh;
+}
+
+.cx24{
+	font-family: 'Raleway', sans-serif;
+	font-size: 18vh;
+	line-height: 18vh;
+	font-weight: 900;
+}
+
+.cx20{
+	line-height: 6vh;
+	font-size: 6vh;
+}
+
+.ah{ position: absolute; opacity: 0 !important; }
+#name-holder span:nth-child(1){ -webkit-transform: translateX(400px); -ms-transform: translateX(400px); transform: translateX(400px); }
+#name-holder span:nth-child(2){ -webkit-transform: translateX(500px); -ms-transform: translateX(500px); transform: translateX(500px); }
+#name-holder span:nth-child(3){ -webkit-transform: translateX(600px); -ms-transform: translateX(600px); transform: translateX(600px); }
+#name-holder span:nth-child(4){ -webkit-transform: translateX(700px); -ms-transform: translateX(700px); transform: translateX(700px); }
+#name-holder span:nth-child(5){ -webkit-transform: translateX(800px); -ms-transform: translateX(800px); transform: translateX(800px); }
+#name-holder span:nth-child(6){ -webkit-transform: translateX(900px); -ms-transform: translateX(900px); transform: translateX(900px); }
+#name-holder span:nth-child(7){ -webkit-transform: translateX(1000px); -ms-transform: translateX(1000px); transform: translateX(1000px); }
+
+
+
+
+#loading-screen{
+	z-index: 84;
+	position: fixed;
+	background-color: rgb(8, 8, 7);
+	height: 100vh;
+	width: 100vw;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	font-family: 'Oxanium', cursive;
+	display: block;
+}
+
+#loading-animation-container{
+	display: block;
+	height: 50vh;
+	width: 100vw;
+	top: 0px;
+	position: absolute;
+	/*background-color: green;*/
+}
+
+#loading-animation{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	    -ms-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);	
+	border-radius: 100vh;
+}
+
+#outer-eye{
+	background-color: rgb(245, 245, 245);
+	height: 20vh;
+	width: 20vh;
+	-webkit-box-shadow: 0px -1px white;
+	        box-shadow: 0px -1px white;
+	border: 3px solid rgb(8, 8, 7);
+}
+
+#inner-eye{
+	background-color: #5985a3;
+	height: 14vh;
+	width: 14vh;
+}
+
+#pupil{
+	background-color: rgb(15, 16, 16);
+	height: 7vh;
+	width: 7vh;
+}
+
+#message-text{
+	display: table;
+	height: 50vh;
+	width: 100vw;
+	text-align: center;
+	/*background-color: red;*/
+	color: white;
+	position: absolute;
+	top: 50vh;
+	font-size: 5vh;
+}
+
+#message-text table{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
